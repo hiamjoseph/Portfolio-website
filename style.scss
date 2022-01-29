@@ -1,0 +1,181 @@
+:root {
+
+  font-size: 16px;
+
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.hero1 {
+  background: url(src/imgs/Rectangle.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  padding: 1rem;
+  position: relative;
+}
+
+.my-image-pfp {
+  max-width: 50%;
+  /* border-radius: 100%; */
+  filter: drop-shadow(14px 14px 0px #f8b17e);
+}
+
+.primary-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding: 2rem 1.5rem 0 0;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links-container {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a, li{
+      font-family: Rota;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      /* or 130% */
+      text-align: right;
+
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+  }
+}
+
+.hero--title {
+  font-family: Rota;
+  font-style: normal;
+  font-weight: 950;
+  font-size: 5rem;
+  line-height: 85%;
+  margin: 0;
+
+  text-transform: uppercase;
+  // max-width: 10ch;
+  
+
+
+  color: #000000;
+
+  .web {
+    font-style: italic;
+    font-weight: 265;
+    /* or 103% */
+  }
+
+  .making {
+    position: relative;
+  }
+  .making::after {
+    content: "";
+    background-color: #000;
+    width: calc(100vw - 100% - 1rem);
+    height: 2%;
+    position: absolute;
+    top: 50%;
+    overflow: visible;
+    display: inline-block;
+  }
+}
+
+.profession-container {
+  display: flex;
+  align-items: flex-end;
+  overflow: visible;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.profession-text {
+  &::before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #000000;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  span {
+    font-family: Rota;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 104%;
+    /* or 104% */
+
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  div {
+    display: flex;
+  }
+
+  .PD,
+  .FRONT-END-WEB,
+  .DEV-UXUI > * {
+    margin: 0;
+  }
+  .PD {
+    gap: 1rem;
+  }
+  .FRONT-END-WEB {
+    gap: 1.5rem;
+  }
+
+  .DEV-UXUI {
+    gap: 2.5rem;
+  }
+}
+
+.cta-link {
+  font-family: Rota;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 148%;
+  /* identical to box height, or 148% */
+
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 0;
+  text-decoration: none;
+
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
