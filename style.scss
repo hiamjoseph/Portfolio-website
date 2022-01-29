@@ -27,7 +27,7 @@ p {
 }
 
 main {
-  padding: 1rem;
+  padding: 20vh 1rem 0 1rem;
   position: relative;
 }
 
@@ -41,8 +41,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+padding-top: 1rem;
 
-  padding: 2rem 1.5rem 0 0;
   * {
     margin: 0;
     padding: 0;
@@ -62,6 +62,7 @@ main {
       line-height: 26px;
       /* or 130% */
       text-align: right;
+      text-decoration: none;
 
       letter-spacing: 0.025em;
       text-transform: uppercase;
@@ -75,7 +76,7 @@ main {
   font-family: Rota;
   font-style: normal;
   font-weight: 950;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 85%;
   margin: 0;
 
