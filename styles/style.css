@@ -73,7 +73,6 @@ main {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.5rem;
-  padding-top: 2rem;
 }
 
 .header-container .nav-links-container a,
