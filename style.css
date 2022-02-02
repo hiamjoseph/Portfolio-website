@@ -5,21 +5,16 @@
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
-p {
+body, p {
   margin: 0;
 }
 
 .hero1 {
-  background: url(src/imgs/Rectangle.png);
-  background-size: cover;
+  background: url("src/imgs/background-repeat-20.svg");
+  background-color: #fff9f6;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -30,59 +25,39 @@ main {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 3rem 1rem 3rem 1rem;
+  justify-content: space-between;
 }
-
 .header-container p {
   font-family: Rota;
   font-style: normal;
   font-weight: 950;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.375rem;
+  line-height: 100%;
   /* or 130% */
   text-align: right;
   text-transform: uppercase;
-  color: #000000;
+  color: #202020;
 }
-
 .header-container * {
   margin: 0;
   padding: 0;
 }
-
 .header-container .nav-links-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   list-style-type: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 0.5rem;
-  padding-top: 2rem;
 }
-
 .header-container .nav-links-container a,
 .header-container .nav-links-container li {
   font-family: Rota;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.375rem;
+  line-height: 100%;
   /* or 130% */
   text-align: right;
   text-decoration: none;
@@ -95,27 +70,25 @@ main {
   font-family: Rota;
   font-style: normal;
   font-weight: 950;
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 85%;
   margin: 0;
   padding: 1rem;
   text-transform: uppercase;
-  color: #000000;
+  color: #202020;
+  text-align: center;
 }
-
 .hero--title .web {
   font-style: italic;
   font-weight: 265;
   /* or 103% */
 }
-
 .hero--title .making {
   position: relative;
 }
-
 .hero--title .making::after {
   content: "";
-  background-color: #000;
+  background-color: #000000;
   width: calc(100vw - 100% - 1rem);
   height: 2%;
   position: absolute;
@@ -123,14 +96,16 @@ main {
   overflow: visible;
   display: inline-block;
 }
+@media (min-width: 450px) {
+  .hero--title .making::after {
+    display: none;
+  }
+}
 
 .profession-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   overflow: visible;
   position: absolute;
   bottom: 0;
@@ -145,7 +120,6 @@ main {
   display: block;
   margin-bottom: 0.5rem;
 }
-
 .profession-text span {
   font-family: Rota;
   font-style: normal;
@@ -157,27 +131,20 @@ main {
   text-transform: uppercase;
   color: #000000;
 }
-
 .profession-text div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .profession-text .PD,
 .profession-text .FRONT-END-WEB,
 .profession-text .DEV-UXUI > * {
   margin: 0;
 }
-
 .profession-text .PD {
   gap: 1rem;
 }
-
 .profession-text .FRONT-END-WEB {
   gap: 1.5rem;
 }
-
 .profession-text .DEV-UXUI {
   gap: 2.5rem;
 }
@@ -199,4 +166,5 @@ main {
   bottom: 0;
   right: 0;
 }
+
 /*# sourceMappingURL=style.css.map */
