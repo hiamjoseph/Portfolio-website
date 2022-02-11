@@ -1,14 +1,18 @@
-const apple = {
-    name: 'apple',
-    calories: 5,
-    edible: true,
-    howTo: function (step1, step2) {
-        console.log('apples are great');
-    }
-}
-
-console.log(apple);
 
 
 
+// const mainTitle = document.querySelector(".main-title");
+// const independant = document.querySelector(".independant");
+// const button = document.querySelector("button");
 
+// // change class and style everytime button is clicked
+// button.addEventListener('click', () => {
+//     mainTitle.classList.toggle("main-title-red");
+//     independant.classList.toggle("main-title-red");
+//     console.log("hey");
+// })
+
+// console.log("hey");
+
+
+ 
