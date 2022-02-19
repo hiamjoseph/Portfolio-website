@@ -164,4 +164,16 @@ main {
   color: black;
 }
 
+.dark-light-toggler {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+.dark-light-toggler button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
