@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="/app.js" defer></script>
-    <script src="grained.js" defer></script>
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <script src="src/scripts/app.js" defer></script>
+    <script src="./src/scripts/grained.js" defer></script>
+    <script src="src/scripts/light-dark mode.js" defer></script>
     <title>Joseph</title>
   </head>
   <body>
     <div class="hero1" id="grained-hero">
       <header class="header-container">
-        <p> Joseph .</p>
+        <div class="header-icon"> <span class="Joseph">Joseph</span> <br> <span class="serghaoui">Serghaoui</span> </div>
 
-         <a href="mailto:youssefserghaoui@yahoo.com" target="_blank" > Get in touch </a>
+         <!-- <a href="mailto:youssefserghaoui@yahoo.com" target="_blank" > Get in touch </a> -->
         
  
       </header>
@@ -22,24 +23,25 @@
         <!-- <div class="main-picture">&nbsp;</div> -->
 
         <div class="main-text">
-          <h1 class="main-title"> <span class="indpendant">independant</span> <span class="FEWD">Creative web developer</span> </h1>
+          <h1 class="main-title"> <span class="indpendant">independant</span><br> <span class="FEWD">creative <span class="web">web</span> developer</span> </h1>
           <!-- <button>click me</button> -->
         </div>
 
       </main>
 
-      <div class="profession-container">
-  
-               <!-- <a href="#" id="light-mode">Light</a> -->
-          <p class="caption">portfolio 2022</p>
-      
-         
 
-          </div>
-          <a id="scroll-cta">scroll down</a>
+          <div id="scroll-cta">
+          <img src="src/icons/Line 11 - white.svg" alt="" srcset="" class="scroll-arrow">
+          <a class="scroll-desc">scroll down</a>
+        </div>
+
+        <div class="dark-light-toggler">
+          <button>
+            Light
+          </button>
         </div>
       </div>
 
-    </div>
+ 
   </body>
 </html>

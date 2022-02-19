@@ -1,0 +1,167 @@
+:root {
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: orangered;
+}
+
+body,
+p {
+  margin: 0;
+  font-family: Open Sauce One;
+}
+
+.hero1 {
+  background: #181818;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+}
+.hero1 > * {
+  position: relative;
+}
+
+.hero-white {
+  background: #f7f7f7;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+}
+.hero-white > * {
+  position: relative;
+}
+
+main {
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container .header-icon {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 100%;
+  /* or 130% */
+  text-align: left;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #e4e4e4;
+}
+.header-container .header-icon .serghaoui {
+  font-weight: 300;
+}
+.header-container * {
+  margin: 0;
+  padding: 0;
+}
+.header-container .nav-links-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.header-container a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-align: right;
+  letter-spacing: 0.025em;
+  text-transform: normal;
+  color: #131313;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000000;
+  border-radius: 3.3125rem;
+}
+.header-container a:hover {
+  color: #e4e4e4;
+  background-color: #131313;
+}
+
+.icon-dark {
+  color: #131313;
+}
+
+.main-title {
+  font-family: Open Sauce One;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 80%;
+  /* or 104% */
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: #e4e4e4;
+}
+.main-title .indpendant {
+  font-family: Unnamed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3rem;
+  /* or 83% */
+  letter-spacing: -2%;
+  text-transform: lowercase;
+}
+.main-title .web {
+  font-style: italic;
+}
+
+.main-title-black {
+  color: #1d1d1d;
+}
+
+.profession-container {
+  text-transform: capitalize;
+  overflow: visible;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  margin: 0 1rem 1rem 0;
+  color: #131313;
+  font-size: 1rem;
+  letter-spacing: -0.05rem;
+}
+
+#scroll-cta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #131313;
+  margin: 1rem;
+}
+#scroll-cta .scroll-desc {
+  transform: rotateZ(-90deg) translateY(100%) translateX(-180%);
+  transform-origin: left;
+  display: inline-block;
+  position: inherit;
+  width: max-content;
+  font-size: 1rem;
+  line-height: 96%;
+  /* or 17px */
+  color: #fff;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+#scroll-cta .scroll-desc-black {
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */

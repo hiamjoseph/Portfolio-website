@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiamjoseph/Portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiamjoseph/Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/hiamjoseph/Portfolio-website#readme",
+  "devDependencies": {
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "css-loader": "^6.6.0",
+    "style-loader": "^3.3.1"
+  }
+}

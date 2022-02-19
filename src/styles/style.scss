@@ -1,0 +1,203 @@
+// @use "styles/index";
+@use "../styles/index" as *;
+
+// Bring the Rota font-face
+
+// @font-face {
+//   font-family: Rota;
+//   src: url("src/Rota\ Complete\ Family/");
+
+// }
+
+// 1rem = 16px
+:root {
+  font-size: 16px;
+}
+
+// border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: orangered;
+}
+body,
+p {
+  margin: 0;
+  font-family: Open Sauce One;
+}
+
+// noise background img to change to alternative .svg
+.hero1 {
+  // background: linear-gradient(30.3deg, rgba(255, 141, 59, 0.2) -3.33%, rgba(255, 223, 199, 0.2) 18.44%), linear-gradient(204.39deg, #FFDFC7 -6.21%, rgba(255, 255, 255, 0) 56.75%);
+  background: #181818;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+
+  & > * {
+    position: relative;
+  }
+}
+
+.hero-white {
+  background: #f7f7f7;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+
+  & > * {
+    position: relative;
+  }
+}
+
+main {
+  margin: 0 auto;
+  position: relative;
+}
+
+// header only includes logo and contact link
+.header-container {
+  @include display-flex-row;
+  align-items: flex-end;
+  // padding: 3rem 0.5rem 3.5rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  .header-icon {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 100%;
+    /* or 130% */
+
+    text-align: left;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: map-get($brandColors, secondary);
+    .serghaoui {
+      font-weight: 300;
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links-container {
+    @include display-flex-row;
+    list-style-type: none;
+  }
+  a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.15rem;
+
+    text-align: right;
+
+    letter-spacing: 0.025em;
+    text-transform: normal;
+
+    color: map-get($brandColors, primary);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    border: 1px solid #000000;
+    border-radius: 3.3125rem;
+
+    &:hover {
+      color: map-get($brandColors, secondary);
+      background-color: map-get($brandColors, primary);
+    }
+  }
+}
+
+.icon-dark {
+  color: rgb(19, 19, 19);
+}
+
+.main-title {
+  font-family: Open Sauce One;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.25rem;
+  line-height: 80%;
+  /* or 104% */
+
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  // margin: 20vh 0 0 0;
+
+  color: map-get($brandColors, secondary);
+
+  .indpendant {
+    // display: inline-block;
+    font-family: Unnamed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    /* or 83% */
+
+    letter-spacing: -2%;
+    text-transform: lowercase;
+    // margin-bottom: 1rem;
+  }
+
+  .web {
+    font-style: italic;
+  }
+}
+
+.main-title-black {
+  color: rgb(29, 29, 29);
+}
+
+// always positioned at the bottom of the viewport
+.profession-container {
+  text-transform: capitalize;
+  overflow: visible;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+
+  margin: 0 1rem 1rem 0;
+  color: map-get($brandColors, primary);
+  font-size: 1rem;
+  letter-spacing: -0.05rem;
+}
+
+#scroll-cta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: map-get($brandColors, primary);
+  margin: 1rem;
+  .scroll-desc {
+    transform: rotateZ(-90deg) translateY(100%) translateX(-180%);
+    transform-origin: left;
+    display: inline-block;
+    position: inherit;
+    width: max-content;
+    font-size: 1rem;
+    line-height: 96%;
+    /* or 17px */
+    color: #fff;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .scroll-desc-black {
+    color: black;
+  }
+
+}
